@@ -23,6 +23,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Future" => "0.24",
     "IO::Async" => "0.54",
+    "IO::Async::Resolver::DNS" => "0.04",
     "IO::Socket::SSL" => 0,
     "Protocol::SMTP" => "0.001",
     "parent" => 0
@@ -35,7 +36,7 @@ my %WriteMakefileArgs = (
     "Test::Fatal" => "0.010",
     "Test::More" => "0.98"
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -46,6 +47,7 @@ my %FallbackPrereqs = (
   "File::Spec" => 0,
   "Future" => "0.24",
   "IO::Async" => "0.54",
+  "IO::Async::Resolver::DNS" => "0.04",
   "IO::Handle" => 0,
   "IO::Socket::SSL" => 0,
   "IPC::Open3" => 0,

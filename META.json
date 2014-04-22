@@ -40,12 +40,13 @@
       "runtime" : {
          "recommends" : {
             "Email::Simple" : "0",
-            "IO::Async::Resolver::DNS" : "0.04",
-            "IO::Async::SSL" : "0.14"
+            "IO::Async::SSL" : "0.14",
+            "Net::LibResolv" : "0"
          },
          "requires" : {
             "Future" : "0.24",
             "IO::Async" : "0.54",
+            "IO::Async::Resolver::DNS" : "0.04",
             "IO::Socket::SSL" : "0",
             "Protocol::SMTP" : "0.001",
             "parent" : "0"
@@ -70,6 +71,6 @@
       },
       "homepage" : "http://search.cpan.org/dist/Net-Async-SMTP/"
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }
 

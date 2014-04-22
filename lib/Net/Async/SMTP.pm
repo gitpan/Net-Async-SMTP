@@ -3,7 +3,7 @@ package Net::Async::SMTP;
 use strict;
 use warnings;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 =head1 NAME
 
@@ -11,7 +11,7 @@ Net::Async::SMTP - email sending with IO::Async
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

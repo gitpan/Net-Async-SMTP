@@ -1,5 +1,5 @@
 package Net::Async::SMTP::Connection;
-$Net::Async::SMTP::Connection::VERSION = '0.001';
+$Net::Async::SMTP::Connection::VERSION = '0.002';
 use strict;
 use warnings;
 use parent qw(IO::Async::Stream);
@@ -10,7 +10,7 @@ Net::Async::SMTP::Connection - stream subclass for dealing with SMTP connections
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 DESCRIPTION
 

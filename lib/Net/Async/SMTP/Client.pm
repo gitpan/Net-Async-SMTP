@@ -1,10 +1,8 @@
 package Net::Async::SMTP::Client;
-
+$Net::Async::SMTP::Client::VERSION = '0.002';
 use strict;
 use warnings;
 use parent qw(IO::Async::Notifier);
-
-our $VERSION = '0.001';
 
 =head1 NAME
 
@@ -12,7 +10,7 @@ Net::Async::SMTP::Client - sending email with IO::Async
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -187,7 +185,9 @@ sub connected {
 		my $sock = shift;
 		my $stream = Net::Async::SMTP::Connection->new(
 			handle => $sock,
-			auth => $self->auth,
+			$self->auth
+			? (auth => $self->auth)
+			: (),
 		);
 		$self->add_child($stream);
 		$stream->send_greeting->then(sub {
